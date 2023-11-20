@@ -9,7 +9,14 @@ class Persona extends Model
 {
     protected $table = 'personas';
     protected $primaryKey = 'personaID';
-
-    protected $fillable = ['nombres','paterno','materno','bibliografia','foto','documento','celular'];
+    public $timestamps = false;
+    protected $fillable = [
+        'nombres',
+        'paterno',
+        'materno',
+        'bibliografia',
+        'foto',
+        'documento',
+        'celular'];
 
 }
